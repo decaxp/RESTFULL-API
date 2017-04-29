@@ -2,6 +2,7 @@
 include_once 'mysql.php';
 include_once 'security.php';
 include_once 'post.php';
+include_once 'get.php';
 
 // получить HTTP method, пут и тело ззапроса
 
@@ -26,9 +27,12 @@ $request=($requestArr[count($requestArr)-1]);
  
 $apikey=test_input($_POST['apikey']);
 $daysmax=test_input($_POST['daysmax']);
+$id=test_input($_POST['id']);
  
 switch ($method) {
   case 'GET':
+	getQuery($mysqli,$id);
+	break;
     //$sql = "select * from users ".($key?" WHERE id=$key":''); break;
   case 'PUT':
     //$sql = "update users set $set where id=$key"; break;
