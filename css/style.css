@@ -1,0 +1,51 @@
+.wid100{
+width:100%;
+display: inline-block;
+}
+
+.wid45{
+width:45%;
+display: inline-block;
+}
+
+.wid20{
+width:20%;
+display: inline-block;
+}
+
+
+.wid10{
+width:10%;
+display: inline-block;
+}
+.task{
+	margin-bottom:10px;
+
+}
+
+.task-text{
+	width:98%;
+}
+.done{
+	text-decoration: line-through;
+}
+
+.h3class{
+    font-size: 24px;
+    color:#999;
+    margin-top: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+}
+#messages{
+	    min-height: 100px;
+    
+    margin: 0 0 10px;
+}
+
+#task-header{
+	
+}
